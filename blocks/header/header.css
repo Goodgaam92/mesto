@@ -1,6 +1,6 @@
 .header {
     width: 880px;
-    border:1px solid #545454;
+    border: 1px solid #545454;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -8,13 +8,16 @@
     padding-top: 45px;
     height: 74px;
 }
+
 @media screen and (max-width:879px) {
     .header {
         height: 56px;
         padding-top: 28px;
         width: 581px;
-}
-@media screen and (max-width:581px) {
-    .header {
-        width: 100%;
-}
+    }
+
+    @media screen and (max-width:581px) {
+        .header {
+            width: 100%;
+        }
+    }
