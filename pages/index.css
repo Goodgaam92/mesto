@@ -15,7 +15,7 @@
 @import url(../blocks/element/element.css);
 @import url(../blocks/element/__place/element__place.css);
 @import url(../blocks/element/__mask-group/element__mask-group.css);
-@import url(../blocks/like/like_disabled.css);
+@import url(../blocks/like/like.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);

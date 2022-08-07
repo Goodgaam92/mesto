@@ -1,4 +1,4 @@
-.like_disabled {
+.like {
     width: 22px;
     margin: 30px 20px 30px 0;
     background-image: url(../../images/Vector2.svg);
@@ -6,6 +6,6 @@
     border: 0;
     background-color: #fff;
 }
-.like_disabled:hover {
+.like:hover {
     opacity: .5;
 }
