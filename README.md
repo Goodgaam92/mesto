@@ -11,6 +11,6 @@
 
 **Ссылка**
 
-* [Ссылка на макет проект](https://goodgaam92.github.io/russian-travel/index.html)
+* [Ссылка на макет проект](https://goodgaam92.github.io/mesto)
 
 
