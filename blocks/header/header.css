@@ -15,9 +15,10 @@
         padding-top: 28px;
         width: 581px;
     }
+}
 
-    @media screen and (max-width:581px) {
-        .header {
-            width: 100%;
-        }
+@media screen and (max-width:581px) {
+    .header {
+        width: 100%;
     }
+}

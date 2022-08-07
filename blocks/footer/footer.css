@@ -13,12 +13,13 @@
     .footer {
         width: 581px;
     }
+}
 
-    @media screen and (max-width:581px) {
-        .footer {
-            font-size: 14px;
-            line-height: 17px;
-            width: 282px;
-            padding-bottom: 36px;
-        }
+@media screen and (max-width:581px) {
+    .footer {
+        font-size: 14px;
+        line-height: 17px;
+        width: 282px;
+        padding-bottom: 36px;
     }
+}
