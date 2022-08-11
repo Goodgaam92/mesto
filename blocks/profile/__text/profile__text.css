@@ -7,6 +7,9 @@
     margin-top: 16px;
     padding: 0;
     color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
    
 }
 
