@@ -19,41 +19,41 @@
                 <img class="profile__avatar" src="./images/image.jpg" alt="Аватарка">
                 <div class="profile__info">
                     <h1 class="profile__name" id="boldStuff2">Жак-Ив Кусто</h1>
-                    <button aria-label="Изменить" class="profile__edit-button"></button>
+                    <button type="button" aria-label="Изменить" class="profile__edit-button"></button>
                     <p class="profile__text">Исследователь океана</p>
                 </div>
-                <button aria-label="Добавить" class="profile__add-button"></button>
+                <button type="button" aria-label="Добавить" class="profile__add-button"></button>
             </section>
 
             <section class="elements">
                 <article class="element">
                     <img class="element__mask-group" src="./images/Карачаевск.jpg" alt="Карачаевск">
                     <h2 class="element__place">Карачаевск</h2>
-                    <button class="like"></button>                </article>
+                    <button type="button" class="like"></button>                </article>
                 <article class="element">
                     <img class="element__mask-group" src="./images/Эльбрус.jpg" alt="гора Эльбрус">
                     <h2 class="element__place">Гора Эльбрус</h2>
-                    <button class="like"></button>                </article>
+                    <button type="button" class="like"></button>                </article>
                 <article class="element">
                     <img class="element__mask-group" src="./images/Домбай.jpg" alt="Домбай">
                     <h2 class="element__place">Домбай</h2>
-                    <button class="like"></button>                </article>
+                    <button type="button" class="like"></button>                </article>
                 <article class="element">
                     <img class="element__mask-group" src="./images/Карачаевск.jpg" alt="Карачаевск">
                     <h2 class="element__place">Карачаевск</h2>
-                    <button class="like"></button>                </article>
+                    <button type="button" class="like"></button>                </article>
                 <article class="element">
                     <img class="element__mask-group" src="./images/Эльбрус.jpg" alt="гора Эльбрус">
                     <h2 class="element__place">Гора Эльбрус</h2>
-                    <button class="like"></button>                </article>
+                    <button type="button" class="like"></button>                </article>
                 <article class="element">
                     <img class="element__mask-group" src="./images/Домбай.jpg" alt="Домбай">
                     <h2 class="element__place">Домбай</h2>
-                    <button aria-label="Лайк" class="like"></button>
+                    <button type="button" aria-label="Лайк" class="like"></button>
                 </article>
             </section>
-            <footer>
-                    <p class="footer">© 2022 Mesto Russia</p>
+            <footer class="footer">
+                    <p class="footer__copyright">© 2022 Mesto Russia</p>
             </footer>
         </main>
     </div>
@@ -61,9 +61,9 @@
             <div class="popup__content">
                 <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="form" name="form">
-                    <input type="text" name="name" class="popup__input popup__input-name"  placeholder="Имя">
-                    <input type="text" name="job" class="popup__input popup__input-job" placeholder="Деятельность">
+                <form class="popup__form" name="form">
+                    <input type="text" name="name" class="popup__input popup__input_type_name">
+                    <input type="text" name="job" class="popup__input popup__input_type_job">
                     <button aria-label="Сохранить" type="submit" class="popup__save-button">Сохранить</button>
                 </form>
             </div>

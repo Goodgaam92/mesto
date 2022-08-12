@@ -10,7 +10,7 @@
     text-align: center;
     border-radius: 2px;
     color: #FFFFFF;
-    margin: 0 36px 37px;
+    margin: 13px 36px 37px;
     border: none;
     cursor: pointer;
 }
@@ -21,9 +21,10 @@
 
 @media screen and (max-width:600px) {
     .popup__save-button {
+        height: 46px;
         font-size: 14px;
         line-height: 17px;
         max-width: 238px;
-        margin:0 22px 25px;
+        margin:15px 22px 25px;
     }
 }

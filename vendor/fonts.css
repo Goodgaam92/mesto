@@ -6,9 +6,9 @@
 }
 @font-face {
     font-family: 'Inter';
-    src: url(./Fonts/Inter-Bold.woff2) format("woff2"),
-        url(./Fonts/Inter-Bold.woff) format("woff");
-        font-weight: 700;
+    src: url(./Fonts/Inter-Medium.woff2) format("woff2"),
+        url(./Fonts/Inter-Medium.woff) format("woff");
+        font-weight: 500;
 }
 @font-face {
     font-family: 'Inter';
