@@ -25,3 +25,10 @@
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);
+@import url(../blocks/popup-place/popup-place.css);
+@import url(../blocks/popup-place/__close-button/popup-place__close-button.css);
+@import url(../blocks/popup-place/__content/popup-place__content.css);
+@import url(../blocks/popup-place/__input/popup-place__input.css);
+@import url(../blocks/popup-place/__save-button/popup-place__save-button.css);
+@import url(../blocks/popup-place/__title/popup-place__title.css);
+@import url(../blocks/popup-place/_opened/popup-place_opened.css);
