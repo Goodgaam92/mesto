@@ -24,7 +24,6 @@
                 </div>
                 <button type="button" aria-label="Добавить" class="profile__add-button"></button>
             </section>
-
             <section class="elements">
 
             </section>
@@ -44,42 +43,24 @@
                 </form>
             </div>
     </section>
+
     <section class="popup-place">
         <div class="popup-place__content">
             <button aria-label="Закрыть" type="button" class="popup-place__close-button"></button>
             <h2 class="popup-place__title">Новое место</h2>
             <form class="popup-place__form" name="form">
                 <input type="text" name="name" class="popup-place__input popup-place__input_type_name" placeholder="Название">
-                <input type="text" name="job" class="popup-place__input popup__input_type_job" placeholder="Ссылка на картинку">
-                <button aria-label="Сохранить" type="submit" class="popup-place__save-button">Создать</button>
+                <input type="text" name="job" class="popup-place__input popup__input_type_img" placeholder="Ссылка на картинку">
+                <button aria-label="Создать" type="submit" class="popup-place__save-button">Создать</button>
             </form>
         </div>
     </section>
     <template class="template">
     <article class="element">
-        <img class="element__mask-group" src="./images/Карачаевск.jpg" alt="Карачаевск">
+        <img type="button" class="element__mask-group" src="./images/Карачаевск.jpg" alt="Карачаевск">
         <h2 class="element__place">Карачаевск</h2>
-        <button type="button" class="like"></button>                </article>
-    <article class="element">
-        <img class="element__mask-group" src="./images/Эльбрус.jpg" alt="гора Эльбрус">
-        <h2 class="element__place">Гора Эльбрус</h2>
-        <button type="button" class="like"></button>                </article>
-    <article class="element">
-        <img class="element__mask-group" src="./images/Домбай.jpg" alt="Домбай">
-        <h2 class="element__place">Домбай</h2>
-        <button type="button" class="like"></button>                </article>
-    <article class="element">
-        <img class="element__mask-group" src="./images/Карачаевск.jpg" alt="Карачаевск">
-        <h2 class="element__place">Карачаевск</h2>
-        <button type="button" class="like"></button>                </article>
-    <article class="element">
-        <img class="element__mask-group" src="./images/Эльбрус.jpg" alt="гора Эльбрус">
-        <h2 class="element__place">Гора Эльбрус</h2>
-        <button type="button" class="like"></button>                </article>
-    <article class="element">
-        <img class="element__mask-group" src="./images/Домбай.jpg" alt="Домбай">
-        <h2 class="element__place">Домбай</h2>
-        <button type="button" aria-label="Лайк" class="like"></button>
+        <button type="button" class="like"></button>
+        <button type="button" class="delete-button"></button>
     </article>
     </template>
     <script src="./scripts/index.js"></script>

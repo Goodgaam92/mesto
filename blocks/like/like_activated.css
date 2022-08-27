@@ -1,0 +1,9 @@
+.like_activated {
+    width: 22px;
+    margin: 30px 20px 30px 0;
+    background-image: url(../../images/likeBlacks.svg);
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
