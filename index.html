@@ -9,8 +9,8 @@
     <title>Mesto</title>
 </head>
 
-<body>
-    <div class="page">
+<body class="page">
+
         <header class="header">
             <img class="header__logo" src="./images/logo.svg" alt="Лого">
         </header>
@@ -27,10 +27,10 @@
             <section class="elements">
 
             </section>
-            <footer class="footer">
-                    <p class="footer__copyright">© 2022 Mesto Russia</p>
-            </footer>
         </main>
+        <footer class="footer">
+        <p class="footer__copyright">© 2022 Mesto Russia</p>
+    </footer>
     </div>
     <section class="popup">
             <div class="popup__content">
@@ -43,14 +43,14 @@
                 </form>
             </div>
     </section>
-    <section class="popup-image">
+    <section class="popup popup-image">
         <div class="popup-image__full">
             <button type="button" class="popup-image__close-button"></button>
             <img class="popup-image__image" src="." alt=".">
             <p class="popup-image__caption"></p>
         </div>
     </section>
-    <section class="popup-place">
+    <section class="popup popup-place">
         <div class="popup-place__content">
             <button aria-label="Закрыть" type="button" class="popup-place__close-button"></button>
             <h2 class="popup-place__title">Новое место</h2>
@@ -69,7 +69,8 @@
         <button type="button" class="delete-button"></button>
     </article>
     </template>
-    <script src="./scripts/index.js"></script>
+        <script src="./scripts/data.js"></script>
+        <script src="./scripts/index.js"></script>
 </body>
 
 </html>
