@@ -39,13 +39,13 @@ let editPlaceButton = document.querySelector('.profile__add-button');
 let templateElement = document.querySelector('.template');
 let popupPlace = document.querySelector('.popup-place');
 let closePlaceButton = popupPlace.querySelector('.popup-place__close-button');
-let inputPlaceImg = document.querySelector('.popup__input_type_img');
+let inputPlaceImg = document.querySelector('.popup-place__input_type_img');
 let inputPlace = document.querySelector('.popup-place__input_type_name');
 let formPlace = document.querySelector('.popup-place__form');
 let popupImg = document.querySelector('.popup-image');
 let popupImgImage = popupImg.querySelector('.popup-image__image');
 let popupCaption = popupImg.querySelector('.popup-image__caption');
-let closeImgFull = popupImg.querySelector('.popup__close-button');
+let closeImgFull = popupImg.querySelector('.popup-image__close-button');
 
 let elements = document.querySelector('.elements');
 
