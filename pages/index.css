@@ -34,3 +34,10 @@
 @import url(../blocks/popup-place/_opened/popup-place_opened.css);
 @import url(../blocks/delete-button/delete-button.css);
 @import url(../blocks/like/like_activated.css);
+@import url(../blocks/popup-image/popup-image.css);
+@import url(../blocks/popup-image/__image/popup-image__image.css);
+@import url(../blocks/popup-image/_full/popup-image_full.css);
+@import url(../blocks/popup-image/__caption/popup-image__caption.css);
+@import url(../blocks/popup-image/__close-button/popup-image__close-button.css);
+@import url(../blocks/popup-image/_opened/popup-image_opened.css);
+
