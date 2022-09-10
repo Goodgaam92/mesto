@@ -1,7 +1,7 @@
 
 const showInputError = (formElement, inputElement, errorMessage) => {
     const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
-    inputElement.classList.add('popup__input_type_error');
+    inputElement.classList.add('popup__input_type-error');
     errorElement.textContent = errorMessage;
     errorElement.classList.add('popup__form__input-error_active');
 
