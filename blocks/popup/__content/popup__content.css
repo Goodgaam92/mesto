@@ -1,14 +1,13 @@
 .popup__content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: 0;
     padding: 0;
     position: relative;
-    max-width: 430px;
-    width: 100%;
+    width: 430px;
     background-color: white;
     border-radius: 10px;
+    min-height: 330px;
 }
 
 @media screen and (max-width:600px) {

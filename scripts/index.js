@@ -4,7 +4,7 @@ const closeButton = popup.querySelector('.popup__close-button');
 const inputName = document.querySelector('.popup__input_type_name');
 const form = document.querySelector('.popup__form');
 const inputJob = document.querySelector('.popup__input_type_job');
-
+const buttonChange = document.querySelector('.popup__submit');
 
 const profileText = document.querySelector('.profile__text');
 const profileName = document.querySelector('.profile__name');
@@ -50,9 +50,11 @@ function createNewCard(name, link) {
 
 function openPopup(popup) {
     popup.classList.add('popup_opened');
+
 }
 function closePopup(popup){
     popup.classList.remove('popup_opened');
+
 }
 
 
@@ -78,6 +80,7 @@ const addPopup = function () {
     inputName.value = profileName.textContent;
     inputJob.value = profileText.textContent;
     openPopup(popup);
+    buttonChange.classList.remove('button_inactive');
 }
 const addPopupPlace = function () {
     openPopup(popupPlace);
@@ -107,12 +110,36 @@ initialCards.forEach((el) => {
 
 //Вызовы
 closeImgFull.addEventListener('click', removeImgPopup);
+closeImgFull.addEventListener('keydown', removeImgPopup);
 closePlaceButton.addEventListener('click',removePopupPlace);
 buttonOpenPopupCard.addEventListener('click',addPopupPlace);
 closeButton.addEventListener('click', removePopup);
 editButton.addEventListener('click', addPopup);
 formPlace.addEventListener('submit', addCard);
 form.addEventListener('submit', changeUserProfile);
+document.addEventListener('keydown', function(evt) {
+    const key = evt.key;
+    if (key === "Escape") {
+        closePopup(popup);
+        closePopup(popupPlace);
+        closePopup(popupImg);
+    }
+});
+popup.addEventListener('click',function (evt){
+    if(evt.target === popup ) {
+        closePopup(popup);
+    };
+});
+popupPlace.addEventListener('click',function (evt){
+    if(evt.target === popupPlace ) {
+        closePopup(popupPlace);
+    };
+});
+popupImg.addEventListener('click',function (evt){
+    if(evt.target === popupImg ) {
+        closePopup(popupImg);
+    };
+});
 
 
 
