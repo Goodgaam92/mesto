@@ -59,13 +59,14 @@ function closePopup(popup){
 
 }
 const pressEscapeHandler =(evt)=>{
-    const activePopup = document.querySelector('.popup_opened');
-    if (evt.key === 'Escape'){
+    if (evt.key === 'Escape') {
+        const activePopup = document.querySelector('.popup_opened');
+        if (activePopup) {
             closePopup(activePopup);
+        } else {
+            document.removeEventListener('keydown', pressEscapeHandler);
         }
-        else {
-            document.removeEventListener('keydown',pressEscapeHandler);
-        }
+    }
     }
 
 const popupImageFull =function(link, caption) {
