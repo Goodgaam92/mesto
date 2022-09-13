@@ -50,19 +50,29 @@ function createNewCard(name, link) {
 
 function openPopup(popup) {
     popup.classList.add('popup_opened');
+    document.addEventListener("keydown", pressEscapeHandler);
 
 }
 function closePopup(popup){
     popup.classList.remove('popup_opened');
+    document.removeEventListener('keydown',pressEscapeHandler);
 
 }
-
+const pressEscapeHandler =(evt)=>{
+    const activePopup = document.querySelector('.popup_opened');
+    if (evt.key === 'Escape'){
+            closePopup(activePopup);
+        }
+        else {
+            document.removeEventListener('keydown',pressEscapeHandler);
+        }
+    }
 
 const popupImageFull =function(link, caption) {
     popupImgImage.src = link;
     popupImgImage.alt = caption;
     popupCaption.textContent = caption;
-    addPopupImg(popupImgImage);
+
     openPopup(popupImg);
 }
 
@@ -83,6 +93,7 @@ const addPopup = function () {
     buttonChange.classList.remove('button_inactive');
 }
 const addPopupPlace = function () {
+    formPlace.reset();
     openPopup(popupPlace);
 
 }
@@ -102,13 +113,14 @@ const addCard = function (evt){
     const card = createNewCard(inputPlace.value, inputPlaceImg.value);
     elements.prepend(card);
     closePopup(popupPlace);
+
 }
 
 initialCards.forEach((el) => {
     elements.append(createNewCard(el.name, el.link));
 });
 
-//Вызовы
+
 closeImgFull.addEventListener('click', removeImgPopup);
 closeImgFull.addEventListener('keydown', removeImgPopup);
 closePlaceButton.addEventListener('click',removePopupPlace);
@@ -117,14 +129,7 @@ closeButton.addEventListener('click', removePopup);
 editButton.addEventListener('click', addPopup);
 formPlace.addEventListener('submit', addCard);
 form.addEventListener('submit', changeUserProfile);
-document.addEventListener('keydown', function(evt) {
-    const key = evt.key;
-    if (key === "Escape") {
-        closePopup(popup);
-        closePopup(popupPlace);
-        closePopup(popupImg);
-    }
-});
+
 popup.addEventListener('click',function (evt){
     if(evt.target === popup ) {
         closePopup(popup);
