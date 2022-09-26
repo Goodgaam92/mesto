@@ -1,3 +1,6 @@
+import FormValidation from "./validate.js";
+import Card from "./Card.js";
+import { initialCards} from "./data.js";
 
 const popup = document.querySelector('.popup');
 const closeButton = popup.querySelector('.popup__close-button');
@@ -10,19 +13,21 @@ const profileText = document.querySelector('.profile__text');
 const profileName = document.querySelector('.profile__name');
 const editButton = document.querySelector('.profile__edit-button');
 const buttonOpenPopupCard = document.querySelector('.profile__add-button');
-
+const popupProfile = document.querySelector('.popup-profile');
 const templateElement = document.querySelector('.template');
 const popupPlace = document.querySelector('.popup-place');
 const closePlaceButton = popupPlace.querySelector('.popup-place__close-button');
 const inputPlaceImg = document.querySelector('.popup__input_type_img');
 const inputPlace = document.querySelector('.popup__input_type_place');
 const formPlace = document.querySelector('.popup-place__form');
-const popupImg = document.querySelector('.popup-image');
+export const popupImg = document.querySelector('.popup-image');
 const popupImgImage = popupImg.querySelector('.popup-image__image');
 const popupCaption = popupImg.querySelector('.popup-image__caption');
 const closeImgFull = popupImg.querySelector('.popup-image__close-button');
 const elements = document.querySelector('.elements');
 const plaseSaveButton = document.querySelector('.popup-place__save-button');
+
+
 function createNewCard(name, link) {
     const newItemElement = templateElement.content.cloneNode(true);
     const placeImg = newItemElement.querySelector('.element__mask-group');
@@ -43,7 +48,7 @@ function createNewCard(name, link) {
 
     deleteButton.addEventListener("click", function (evt) {
         deleteButton.closest(".element").remove()
-});
+    });
     return newItemElement;
 }
 const buttonDisable = (buttonElement) => {
@@ -61,7 +66,7 @@ function closePopup(popup){
     document.removeEventListener('keydown',pressEscapeHandler);
 
 }
-const pressEscapeHandler =(evt)=>{
+export const pressEscapeHandler =(evt)=>{
     if (evt.key === 'Escape') {
         const activePopup = document.querySelector('.popup_opened');
         if (activePopup) {
@@ -70,8 +75,7 @@ const pressEscapeHandler =(evt)=>{
             document.removeEventListener('keydown', pressEscapeHandler);
         }
     }
-    }
-
+}
 const popupImageFull =function(link, caption) {
     popupImgImage.src = link;
     popupImgImage.alt = caption;
@@ -79,36 +83,31 @@ const popupImageFull =function(link, caption) {
 
     openPopup(popupImg);
 }
-
-
 function changeUserProfile (evt) {
     evt.preventDefault();
     profileName.textContent = inputName.value;
     profileText.textContent = inputJob.value;
     closePopup(popup);
 }
-const addPopupImg = function(){
-    openPopup(popupImg);
-};
+
 const addPopup = function () {
     inputName.value = profileName.textContent;
     inputJob.value = profileText.textContent;
     openPopup(popup);
     buttonChange.classList.remove('button_inactive');
 }
+
 const addPopupPlace = function () {
     formPlace.reset();
     buttonDisable(plaseSaveButton);
     openPopup(popupPlace);
 
 }
-const removeImgPopup = function () {
-    closePopup(popupImg);
-}
 
 const removePopup = function () {
     closePopup(popup);
 }
+
 const removePopupPlace = function () {
     closePopup(popupPlace);
 }
@@ -118,16 +117,29 @@ const addCard = function (evt){
     const card = createNewCard(inputPlace.value, inputPlaceImg.value);
     elements.prepend(card);
     closePopup(popupPlace);
-
 }
 
-initialCards.forEach((el) => {
-    elements.append(createNewCard(el.name, el.link));
+
+initialCards.forEach((item) => {
+   const card = new Card(item, '.template');
+   const cardElement = card.generateCard();
+   document.querySelector('.elements').append(cardElement);
 });
+const validationConfig = {
+    formSelector: '.popup__form',
+    inputSelector: '.popup__input',
+    formFieldset: '.popup__fieldset',
+    submitButtonSelector: '.popup__submit',
+    inactiveButtonClass: 'button_inactive',
+    inputErrorClass: 'popup__input_type-error',
+    errorClass: 'popup__form__input-error_active'
+};
+const formAddValidator = new FormValidation(validationConfig, popupPlace);
+const formEditValidator = new FormValidation(validationConfig, popupProfile);
+formAddValidator.enableValidation();
+formEditValidator.enableValidation();
 
 
-closeImgFull.addEventListener('click', removeImgPopup);
-closeImgFull.addEventListener('keydown', removeImgPopup);
 closePlaceButton.addEventListener('click',removePopupPlace);
 buttonOpenPopupCard.addEventListener('click',addPopupPlace);
 closeButton.addEventListener('click', removePopup);
