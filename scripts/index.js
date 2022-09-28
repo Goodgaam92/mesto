@@ -131,6 +131,7 @@ editButton.addEventListener('click', addPopup);
 formPlace.addEventListener('submit', createCard);
 form.addEventListener('submit', changeUserProfile);
 
+
 popupProfile.addEventListener('click',function (evt){
     if(evt.target === popupProfile ) {
         closePopup(popupProfile);
