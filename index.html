@@ -36,14 +36,12 @@
             <div class="popup__content">
                 <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
                 <form class="popup__form" name="form">
-                    <fieldset class="popup__fieldset">
                     <h2 class="popup__title">Редактировать профиль</h2>
                     <input id="name-input" type="text" minlength="2" maxlength="40" required name="name" class="popup__input popup__input_type_name">
                     <span class="name-input-error popup__input-error"></span>
                     <input id="job-input" type="text" name="job" minlength="2" maxlength="200"  required class="popup__input popup__input_type_job">
                     <span class="job-input-error popup__input-error"></span>
                     <button aria-label="Сохранить" type="submit" class="popup__submit popup__save-button">Сохранить</button>
-                    </fieldset>
                 </form>
             </div>
     </div>
@@ -59,13 +57,11 @@
             <button aria-label="Закрыть" type="button" class="popup-place__close-button"></button>
             <h2 class="popup-place__title">Новое место</h2>
             <form class="popup__form popup-place__form" name="form">
-                <fieldset class="popup__fieldset">
                 <input type="text" id="place-input" name="name" class="popup__input popup__input_type_place" minlength="2" maxlength="30" placeholder="Название" required>
                 <span class="place-input-error popup__input-error"></span>
                 <input type="url" id="url-input" name="job" class="popup__input popup__input_type_img" placeholder="Ссылка на картинку" required>
                 <span class="url-input-error popup__input-error"></span>
                 <button aria-label="Создать" type="submit" class="popup__submit popup-place__save-button">Создать</button>
-                </fieldset>
             </form>
 
         </div>
@@ -79,9 +75,6 @@
     </article>
     </template>
         <script src="./scripts/index.js" type="module"></script>
-        <script src="./scripts/Card.js" type="module"></script>
-        <script src="./scripts/data.js" type="module"></script>
-        <script src="./scripts/validate.js" type="module"></script>
 </body>
 
 </html>

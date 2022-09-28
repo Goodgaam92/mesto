@@ -1,61 +1,49 @@
-import {pressEscapeHandler} from "./index.js";
-import {popupImg} from "./index.js";
 export default class Card  {
-    constructor(data, templateSelector ){
+    constructor(data, templateSelector,handleOpenPopup,handleClosePopup ){
         this._name = data.name;
         this._link = data.link;
         this._templateSelector = templateSelector;
-        this._popupImgImage = document.querySelector('.popup-image__image');
-        this._popupCaption = document.querySelector('.popup-image__caption');
-        this._popupImg = popupImg;
+        this._handleOpenPopup = handleOpenPopup;
+        this._handleClosePopup = handleClosePopup;
     }
-    _handleOpenPopup(){
+    _handleLikeButton () {
+        this._likeButton.classList.toggle('like_activated')
+    };
 
-        this._popupImgImage.src = this._link;
-        this._popupCaption.textContent = this._name;
-        this._popupImg.classList.add('popup_opened');
-        document.addEventListener("keydown", pressEscapeHandler);
-    }
-    _handleClosePopup(){
-        this._popupImgImage.src = '';
-        this._popupImg.classList.remove('popup_opened');
-        document.removeEventListener('keydown',pressEscapeHandler);
-    }
+    _handleDeleteButton (){
+        this._deleteButton.closest(".element").remove()
+    };
     _setEventListeners(){
-
+        this._likeButton = this._element.querySelector('.like');
+        this._deleteButton = this._element.querySelector('.delete-button');
+        this._likeButton.addEventListener("click", () =>
+            this._handleLikeButton ()
+        );
+        this._deleteButton.addEventListener("click", () =>
+            this._handleDeleteButton()
+        );
         this._element.querySelector('.element__mask-group').addEventListener('click', () =>{
-            this._handleOpenPopup();
+            this._handleOpenPopup(this._name, this._link);
         })
         this._closeImgFull = document.querySelector('.popup-image__close-button');
         this._closeImgFull.addEventListener('click', () =>{
-            this._handleClosePopup()
+            this._handleClosePopup();
         })
     }
     _getTemplate(){
-        const cardElement = document.querySelector('.template')
+        const cardElement = document.querySelector(this._templateSelector)
             .content
             .querySelector('.element')
             .cloneNode(true);
         return cardElement
     }
-    _button(){
-        const likeButton = this._element.querySelector('.like')
-        const deleteButton = this._element.querySelector('.delete-button')
-        likeButton.addEventListener('click', function (evt) {
-            likeButton.classList.toggle('like_activated')
-        });
-
-        deleteButton.addEventListener("click", function (evt) {
-            deleteButton.closest(".element").remove()
-        });
-
-    }
     generateCard(){
         this._element = this._getTemplate();
         this._setEventListeners();
-        this._button();
+
         this._element.querySelector('.element__place').textContent = this._name;
         this._element.querySelector('.element__mask-group').src = this._link;
+        this._element.querySelector('.element__mask-group').alt = this._name;
         return this._element;
 
     }
