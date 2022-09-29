@@ -11,7 +11,8 @@ export default class Card  {
     };
 
     _handleDeleteButton (){
-        this._deleteButton.closest(".element").remove()
+        this._element.remove();
+        this._element = null;
     };
     _setEventListeners(){
         this._likeButton = this._element.querySelector('.like');
@@ -25,10 +26,7 @@ export default class Card  {
         this._element.querySelector('.element__mask-group').addEventListener('click', () =>{
             this._handleOpenPopup(this._name, this._link);
         })
-        this._closeImgFull = document.querySelector('.popup-image__close-button');
-        this._closeImgFull.addEventListener('click', () =>{
-            this._handleClosePopup();
-        })
+
     }
     _getTemplate(){
         const cardElement = document.querySelector(this._templateSelector)

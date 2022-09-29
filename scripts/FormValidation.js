@@ -41,7 +41,7 @@ _hasInvalidInput(){
 
 };
 
-toggleButtonState(){
+_toggleButtonState(){
     if(this._hasInvalidInput()){
         this._buttonElement.setAttribute("disabled",'');
         this._buttonElement.classList.add( this._inactiveButtonClass)
@@ -51,13 +51,19 @@ toggleButtonState(){
         this._buttonElement.classList.remove( this._inactiveButtonClass)
     }
     };
+resetValidation (){
+    this._toggleButtonState();
+    this._inputList.forEach((inputElement)=>{
+      this._hideInputError(inputElement);
+    });
 
+}
     enableValidation () {
-        this.toggleButtonState();
+        this._toggleButtonState();
         this._inputList.forEach((inputElement) => {
             inputElement.addEventListener('input', () => {
                 this._isValid(inputElement);
-                this.toggleButtonState();
+                this._toggleButtonState();
             });
         });
     };
