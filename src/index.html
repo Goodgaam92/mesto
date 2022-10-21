@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
 </head>
 
 <body class="page">
 
         <header class="header">
-            <img class="header__logo" src="./images/logo.svg" alt="Лого">
+            <img class="header__logo" src="<%require('./images/logo.svg')%>" alt="Лого">
         </header>
         <main>
             <section class="profile">
-                <img class="profile__avatar" src="./images/image.jpg" alt="Аватарка">
+                <img class="profile__avatar" src="<%require('./images/image.jpg')%>" alt="Аватарка">
                 <div class="profile__info">
-                    <h1 class="profile__name" id="boldStuff2">Жак-Ив Кусто</h1>
+                    <h1 class="profile__name" >Жак-Ив Кусто</h1>
                     <button type="button" aria-label="Изменить" class="profile__edit-button"></button>
                     <p class="profile__text">Исследователь океана</p>
                 </div>
@@ -59,7 +58,7 @@
             <form class="popup__form popup-place__form" name="form">
                 <input type="text" id="place-input" name="name" class="popup__input popup__input_type_place" minlength="2" maxlength="30" placeholder="Название" required>
                 <span class="place-input-error popup__input-error"></span>
-                <input type="url" id="url-input" name="job" class="popup__input popup__input_type_img" placeholder="Ссылка на картинку" required>
+                <input type="url" id="url-input" name="link" class="popup__input popup__input_type_img" placeholder="Ссылка на картинку" required>
                 <span class="url-input-error popup__input-error"></span>
                 <button aria-label="Создать" type="submit" class="popup__submit popup-place__save-button">Создать</button>
             </form>
@@ -68,7 +67,7 @@
     </div>
     <template class="template">
     <article class="element">
-        <img type="button" class="element__mask-group" src="./images/Карачаевск.jpg" alt="">
+        <img type="button" class="element__mask-group" src="." alt="">
         <h2 class="element__place"></h2>
         <button type="button" class="like"></button>
         <button type="button" class="delete-button"></button>

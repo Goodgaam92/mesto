@@ -16,7 +16,6 @@ _showInputError( inputElement)  {
     inputElement.classList.add(this._inputErrorClass);
     errorElement.textContent = inputElement.validationMessage;
     errorElement.classList.add(this._errorClass);
-
 };
 
 _hideInputError (inputElement) {
@@ -32,15 +31,11 @@ _isValid (inputElement){
         this._hideInputError(inputElement);
     }
 }
-
-
 _hasInvalidInput(){
     return this._inputList.some((inputElement) =>{
         return !inputElement.validity.valid;
     });
-
 };
-
 _toggleButtonState(){
     if(this._hasInvalidInput()){
         this._buttonElement.setAttribute("disabled",'');
@@ -58,15 +53,15 @@ resetValidation (){
     });
 
 }
-    enableValidation () {
-        this._toggleButtonState();
-        this._inputList.forEach((inputElement) => {
-            inputElement.addEventListener('input', () => {
-                this._isValid(inputElement);
-                this._toggleButtonState();
-            });
+enableValidation () {
+    this._toggleButtonState();
+    this._inputList.forEach((inputElement) => {
+        inputElement.addEventListener('input', () => {
+            this._isValid(inputElement);
+            this._toggleButtonState();
         });
-    };
+    });
+};
 
 
 }
