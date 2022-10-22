@@ -29,7 +29,7 @@ const section = new Section(
         items:initialCards,
         render:(item) =>section.addItem(addCard(item))},'.elements');
 
-const addPopupPlace = function () {
+const openPopupPlace = function () {
     formPlace.reset();
     formAddValidator.resetValidation()
     popupPlaceOpen.open();
@@ -44,7 +44,7 @@ function openPopupProfile() {
 const formAddValidator = new FormValidation(validationConfig, popupPlaceOpen._getFormElement());
 const formEditValidator = new FormValidation(validationConfig, popupProfile._getFormElement());
 
-buttonOpenPopupCard.addEventListener('click',addPopupPlace);
+buttonOpenPopupCard.addEventListener('click',openPopupPlace);
 editButton.addEventListener('click', openPopupProfile);
 
 formAddValidator.enableValidation();

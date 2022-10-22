@@ -11,11 +11,11 @@
 <body class="page">
 
         <header class="header">
-            <img class="header__logo" src="<%require('./images/logo.svg')%>" alt="Лого">
+            <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Лого">
         </header>
         <main>
             <section class="profile">
-                <img class="profile__avatar" src="<%require('./images/image.jpg')%>" alt="Аватарка">
+                <img class="profile__avatar" src="<%=require('./images/image.jpg')%>" alt="Аватарка">
                 <div class="profile__info">
                     <h1 class="profile__name" >Жак-Ив Кусто</h1>
                     <button type="button" aria-label="Изменить" class="profile__edit-button"></button>
@@ -36,9 +36,9 @@
                 <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
                 <form class="popup__form" name="form">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input id="name-input" type="text" minlength="2" maxlength="40" required name="name" class="popup__input popup__input_type_name">
+                    <input id="name-input" type="text" minlength="2" maxlength="40" placeholder="Имя" required name="name" class="popup__input popup__input_type_name">
                     <span class="name-input-error popup__input-error"></span>
-                    <input id="job-input" type="text" name="job" minlength="2" maxlength="200"  required class="popup__input popup__input_type_job">
+                    <input id="job-input" type="text" name="job" minlength="2" maxlength="200" placeholder="Деятельность"  required class="popup__input popup__input_type_job">
                     <span class="job-input-error popup__input-error"></span>
                     <button aria-label="Сохранить" type="submit" class="popup__submit popup__save-button">Сохранить</button>
                 </form>

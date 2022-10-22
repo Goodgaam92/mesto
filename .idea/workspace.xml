@@ -2,78 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a65305b-a0ab-4e11-a646-cb4b2061a6f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mesto.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/button/button_inactive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/delete-button/delete-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__mask-group/element__mask-group.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__place/element__place.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elements/elements.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/like/like.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/like/like_activated.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/page/_opacity/page_opacity.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/__caption/popup-image__caption.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/__image/popup-image__image.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/_full/popup-image__full.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/_opened/popup-image_opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/popup-image.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-place/__content/popup-place__content.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-place/__input/popup-place__input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-place/__save-button/popup-place__save-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-place/__title/popup-place__title.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-place/_opened/popup-place_opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__close-button/popup__close-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__content/popup__content.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__form/_input-error/popup__form_input-error_active.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__form/_input-error/popup__input-error.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/_type/popup__input_type-error.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__save-button/popup__save-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__title/popup__title.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__info/profile__info.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__name/profile__name.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__text/profile__text.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/profile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Close-Icon-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CloseIcon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Trash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Union.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Vector1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Vector2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/likeBlacks.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Домбай.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Карачаевск.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Эльбрус.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/FormValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/Fonts/Inter-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__mask-group/element__mask-group.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__mask-group/element__mask-group.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +69,8 @@
       <workItem from="1666339622340" duration="7329000" />
       <workItem from="1666373804450" duration="17000" />
       <workItem from="1666374440046" duration="321000" />
-      <workItem from="1666374968692" duration="1384000" />
+      <workItem from="1666374968692" duration="1710000" />
+      <workItem from="1666430440581" duration="422000" />
     </task>
     <servers />
   </component>
