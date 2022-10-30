@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a65305b-a0ab-4e11-a646-cb4b2061a6f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/element/__like-counter/element__like-counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__title/popup-accept__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__yes-button/popup-accept__yes-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__content/popup-avatar__content.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__save-button/popup-avatar__save-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__title/popup-avatar__tilte.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile-avatar/__edit-button/profile-avatar__edit-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/karandash.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/like/like.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/like/like.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like-counter/element__like-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like-counter/element__like-counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +83,7 @@
       <workItem from="1666470289214" duration="1952000" />
       <workItem from="1667060353658" duration="103000" />
       <workItem from="1667060470815" duration="9127000" />
-      <workItem from="1667140353893" duration="16420000" />
+      <workItem from="1667140353893" duration="16617000" />
     </task>
     <servers />
   </component>
