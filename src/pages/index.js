@@ -18,7 +18,7 @@ const api = new Api({
 const formPlace = document.querySelector('.popup-place__form');
 const editButton = document.querySelector('.profile__edit-button');
 const buttonOpenPopupCard = document.querySelector('.profile__add-button');
-const buttonOpenAvatarPopup = document.querySelector('.profile-avatar__edit-button')
+const buttonOpenAvatarPopup = document.querySelector('.profile__avatar-edit')
 const avatarPopup = document.querySelector('.popup-avatar');
 
 const userInfo = new UserInfo('.profile__name','.profile__text');

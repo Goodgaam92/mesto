@@ -1,4 +1,4 @@
-.profile-avatar__edit-button{
+.profile__avatar-edit{
     background-image: url("../../../images/karandash.svg");
     margin: 36px 12px 0 0;
     padding: 0;
@@ -12,6 +12,6 @@
     opacity: 0;
     background-color: #000;
 }
-.profile-avatar__edit-button:hover{
+.profile__avatar-edit:hover{
     opacity: 0.8;
 }

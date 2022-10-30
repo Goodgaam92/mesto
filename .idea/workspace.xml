@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a65305b-a0ab-4e11-a646-cb4b2061a6f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/__like-counter/element__like-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__like-counter/element__like-counter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile-avatar/__edit-button/profile-avatar__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit/profile-avatar__edit-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Бекхан\dev\mesto\src\blocks\profile" />
       <recent name="C:\Users\Бекхан\dev\mesto\src\blocks\profile-avatar\__edit-button" />
       <recent name="C:\Users\Бекхан\dev\mesto\src\images" />
     </key>
@@ -83,7 +87,7 @@
       <workItem from="1666470289214" duration="1952000" />
       <workItem from="1667060353658" duration="103000" />
       <workItem from="1667060470815" duration="9127000" />
-      <workItem from="1667140353893" duration="16617000" />
+      <workItem from="1667140353893" duration="16944000" />
     </task>
     <servers />
   </component>
