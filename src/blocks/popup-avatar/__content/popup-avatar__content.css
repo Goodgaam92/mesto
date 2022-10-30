@@ -1,0 +1,11 @@
+.popup-avatar__content{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 272px;
+    left: 425px;
+    top: 224px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}

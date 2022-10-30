@@ -1,0 +1,17 @@
+.profile-avatar__edit-button{
+    background-image: url("../../../images/karandash.svg");
+    margin: 36px 12px 0 0;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    background-color: #000;
+}
+.profile-avatar__edit-button:hover{
+    opacity: 0.8;
+}
