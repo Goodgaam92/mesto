@@ -6,4 +6,10 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+@media screen and (max-width:600px) {
+    .popup-accept__content {
+        width: 282px;
+    }
 }

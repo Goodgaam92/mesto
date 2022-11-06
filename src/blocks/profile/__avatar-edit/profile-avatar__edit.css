@@ -1,0 +1,26 @@
+.profile__avatar-edit{
+    position: relative;
+
+}
+.profile__avatar-edit:hover::before {
+    margin-top: 36px;
+    content: "";
+    position: absolute;
+    background-image: url("../../../images/karandash.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 879px) {
+    .profile__avatar-edit {
+        margin: 42px auto 0 auto;
+    }
+    .profile__avatar-edit:hover::before{
+        margin-top: 42px;
+    }
+
+}

@@ -15,8 +15,9 @@
         </header>
         <main>
             <section class="profile">
-                <div type="button" class="profile__avatar-edit"></div>
+                <div class="profile__avatar-edit">
                 <img class="profile__avatar" src="<%=require('./images/image.jpg')%>" alt="Аватарка">
+                </div>
                 <div class="profile__info">
                     <h1 class="profile__name" ></h1>
                     <button type="button" aria-label="Изменить" class="profile__edit-button"></button>
@@ -37,9 +38,9 @@
                 <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
                 <form class="popup__form" name="form">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input id="name-input" type="text" minlength="2" maxlength="40" placeholder="Имя" required name="name" class="popup__input popup__input_type_name">
+                    <input id="name-input" type="text" minlength="2" maxlength="40" placeholder="Имя" required name="name" class="popup__input">
                     <span class="name-input-error popup__input-error"></span>
-                    <input id="job-input" type="text" name="about" minlength="2" maxlength="200" placeholder="Деятельность"  required class="popup__input popup__input_type_job">
+                    <input id="job-input" type="text" name="about" minlength="2" maxlength="200" placeholder="Деятельность"  required class="popup__input">
                     <span class="job-input-error popup__input-error"></span>
                     <button aria-label="Сохранить" type="submit" class="popup__submit popup__save-button">Сохранить</button>
                 </form>
@@ -57,9 +58,9 @@
             <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
             <h2 class="popup-place__title">Новое место</h2>
             <form class="popup__form popup-place__form" name="form">
-                <input type="text" id="place-input" name="name" class="popup__input popup__input_type_place" minlength="2" maxlength="30" placeholder="Название" required>
+                <input type="text" id="place-input" name="name" class="popup__input " minlength="2" maxlength="30" placeholder="Название" required>
                 <span class="place-input-error popup__input-error"></span>
-                <input type="url" id="url-input" name="link" class="popup__input popup__input_type_img" placeholder="Ссылка на картинку" required>
+                <input type="url" id="url-input" name="link" class="popup__input " placeholder="Ссылка на картинку" required>
                 <span class="url-input-error popup__input-error"></span>
                 <button aria-label="Создать" type="submit" class="popup__submit popup-place__save-button">Создать</button>
             </form>
@@ -67,15 +68,20 @@
     </div>
     <div class="popup popup-accept">
        <div class="popup-accept__content">
+           <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
             <h2 class="popup-accept__title">Вы уверены?</h2>
-            <button class="popup__submit popup-accept__yes-button">Да</button>
+            <button type="button" class="popup__remove-button">Да</button>
        </div>
     </div>
     <div class="popup popup-avatar">
         <div class="popup-avatar__content">
-            <h2 class="popup-avatar__title">Обновить аватар</h2>
-            <input type="url" id="avatar-input" name="avatar" class="popup__input popup__input_type_avatar" placeholder="Ссылка на аватар">
-            <button class="popup__submit popup-avatar__save-button">Сохранить</button>
+            <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
+            <form class="popup__form popup-avatar__form" name="form">
+                <h2 class="popup-avatar__title">Обновить аватар</h2>
+                <input type="url" id="avatar-input" name="avatar" class="popup__input" placeholder="Ссылка на аватар">
+                <span class="avatar-input-error popup__input-error"></span>
+                <button aria-label="Сохранить" type="submit" class="popup__submit popup-avatar__save-button">Сохранить</button>
+            </form>
         </div>
     </div>
     <template class="template">
