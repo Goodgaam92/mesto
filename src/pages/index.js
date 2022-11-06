@@ -86,7 +86,7 @@ const popupAvatar = new PopupWithForm({
         popupAvatar.loading(true);
         api.changeAvatar(formData)
             .then((res) => {
-                userInfo.setAvatar(res)
+                userInfo.setUserInfo(res)
                 popupAvatar.close()
             })
             .catch((err) => {
@@ -162,8 +162,6 @@ const formAvatarValidator = new FormValidation(validationConfig,popupAvatar._get
 Promise.all([api.getUserInfo(), api.getInitialCards()])
     .then(([userData, cards]) => {
         userInfo.setUserInfo(userData);
-        userInfo.setAvatar(userData);
-        userInfo.setUserId(userData)
         section.renderItems(cards);
         cards.reverse();
         section.renderItems(cards)
