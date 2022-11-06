@@ -14,7 +14,7 @@ export default class Popup {
 
     close(){
         this._popup.classList.remove('popup_opened');
-        document.addEventListener('keydown',this._pressEscapeHandler);
+        document.removeEventListener('keydown',this._pressEscapeHandler);
     }
     setEventListeners(){
 

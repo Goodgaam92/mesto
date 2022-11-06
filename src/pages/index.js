@@ -10,7 +10,7 @@ import './index.css';
 import PopupWithConfirm from "../components/PopupwithConfirm.js";
 
 
-const formPlace = document.querySelector('.popup-place__form');
+
 const editButton = document.querySelector('.profile__edit-button');
 const buttonOpenPopupCard = document.querySelector('.profile__add-button');
 const buttonOpenAvatarPopup = document.querySelector('.profile__avatar-edit');
@@ -72,7 +72,7 @@ const popupPlace = new PopupWithForm({
 const popupConfirm = new PopupWithConfirm('.popup-accept', (card, cardId)=> {
     api.deleteCard(cardId)
         .then(() => {
-            card._deleteCard()
+            card.deleteCard()
             popupConfirm.close()
         })
         .catch((err) => {
@@ -88,7 +88,6 @@ const popupAvatar = new PopupWithForm({
             .then((res) => {
                 userInfo.setAvatar(res)
                 popupAvatar.close()
-
             })
             .catch((err) => {
                 console.log(`Ошибка: ${err}`);
@@ -114,19 +113,16 @@ const section = new Section({
 function openPopupProfile(){
     popupProfile.open();
     const userData = userInfo.getUserInfo();
-    const {name,about} = userData;
-    popupProfile.setInputValues({name,about});
+    popupProfile.setInputValues(userData);
     formEditValidator.resetValidation();
 };
 function openPopupPlace(){
     popupPlace.open();
-    formPlace.reset();
     formAddValidator.resetValidation();
 
 };
 function openPopupAvatar(){
     popupAvatar.open();
-    formPlace.reset();
     formAvatarValidator.resetValidation();
 };
 
@@ -134,7 +130,7 @@ function openPopupAvatar(){
 function putLike(card, id) {
     api.putLike(id)
         .then((res) => {
-            card.likeCounter(res)
+            card.setLikeCounter(res)
             card.toggleLike()
         })
         .catch((err) => {
@@ -145,7 +141,7 @@ function putLike(card, id) {
 function removeLike(card, id) {
     api.deleteLike(id)
         .then((res) => {
-            card.likeCounter(res)
+            card.setLikeCounter(res)
             card.toggleLike()
         })
         .catch((err) => {
@@ -161,7 +157,6 @@ function deleteButton(card, cardId) {
 const formAddValidator = new FormValidation(validationConfig, popupPlace._getFormElement());
 const formEditValidator = new FormValidation(validationConfig, popupProfile._getFormElement());
 const formAvatarValidator = new FormValidation(validationConfig,popupAvatar._getFormElement())
-
 
 
 Promise.all([api.getUserInfo(), api.getInitialCards()])

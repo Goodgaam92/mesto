@@ -25,7 +25,7 @@ export default class Card  {
         return this._likes.some( (like) =>
             like._id === this._getUserId())
     }
-    likeCounter(res) {
+    setLikeCounter(res) {
         this._likeNumber.textContent = res.likes.length
     }
     toggleLike() {
@@ -79,7 +79,7 @@ export default class Card  {
             this._handleClickImage();
         })
     }
-    _deleteCard() {
+    deleteCard() {
         this._element.remove();
         this._element = null;
     }
