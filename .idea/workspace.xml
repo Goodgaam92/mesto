@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a65305b-a0ab-4e11-a646-cb4b2061a6f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit/profile-avatar__edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-accept/__content/popup-accept__content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup-avatar/__content/popup-avatar__content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__content/popup-avatar__content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup-avatar/__save-button/popup-avatar__save-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__save-button/popup-avatar__save-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup-avatar/__title/popup-avatar__tilte.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__title/popup-avatar__tilte.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup/__save-button/popup__save-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup/__save-button/popup__save-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit/profile-avatar__edit-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/data.js" afterDir="false" />
-    </list>
+    <list default="true" id="4a65305b-a0ab-4e11-a646-cb4b2061a6f5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +90,7 @@
       <workItem from="1667667829733" duration="129000" />
       <workItem from="1667667978171" duration="8992000" />
       <workItem from="1667688487705" duration="7528000" />
+      <workItem from="1667696604274" duration="566000" />
     </task>
     <servers />
   </component>
