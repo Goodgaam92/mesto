@@ -6,7 +6,7 @@
     line-height: 15px;
     margin: 0 36px;
     color: #FF0000;
-    visibility: hidden;
+    opacity: 0;
     display: block;
     min-height: 30px;
 }
