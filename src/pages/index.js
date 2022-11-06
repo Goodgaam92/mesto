@@ -154,9 +154,9 @@ function deleteButton(card, cardId) {
 }
 
 
-const formAddValidator = new FormValidation(validationConfig, popupPlace._getFormElement());
-const formEditValidator = new FormValidation(validationConfig, popupProfile._getFormElement());
-const formAvatarValidator = new FormValidation(validationConfig,popupAvatar._getFormElement())
+const formAddValidator = new FormValidation(validationConfig, popupPlace.getFormElement());
+const formEditValidator = new FormValidation(validationConfig, popupProfile.getFormElement());
+const formAvatarValidator = new FormValidation(validationConfig,popupAvatar.getFormElement())
 
 
 Promise.all([api.getUserInfo(), api.getInitialCards()])

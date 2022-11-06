@@ -57,7 +57,7 @@
         <div class="popup-place__content">
             <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
             <h2 class="popup-place__title">Новое место</h2>
-            <form class="popup__form popup-place__form" name="form">
+            <form class="popup__form popup-place__form" name="form-place">
                 <input type="text" id="place-input" name="name" class="popup__input " minlength="2" maxlength="30" placeholder="Название" required>
                 <span class="place-input-error popup__input-error"></span>
                 <input type="url" id="url-input" name="link" class="popup__input " placeholder="Ссылка на картинку" required>
@@ -76,9 +76,9 @@
     <div class="popup popup-avatar">
         <div class="popup-avatar__content">
             <button aria-label="Закрыть" type="button" class="popup__close-button"></button>
-            <form class="popup__form popup-avatar__form" name="form">
+            <form class="popup__form popup-avatar__form" name="form-avatar">
                 <h2 class="popup-avatar__title">Обновить аватар</h2>
-                <input type="url" id="avatar-input" name="avatar" class="popup__input" placeholder="Ссылка на аватар">
+                <input type="url" id="avatar-input" name="avatar" class="popup__input" placeholder="Ссылка на аватар" required>
                 <span class="avatar-input-error popup__input-error"></span>
                 <button aria-label="Сохранить" type="submit" class="popup__submit popup-avatar__save-button">Сохранить</button>
             </form>
