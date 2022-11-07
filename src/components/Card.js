@@ -60,9 +60,10 @@ export default class Card  {
         if (!(this._owner._id == this._getUserId())) {
             this._deleteButton.remove()
         }
+
         this._likeNumber.textContent = this._likes.length;
         if (this.isLiked()) {
-            this._likeButton.classList.add('button_active');
+            this._likeButton.classList.add('like_activated');
         }
         this._setEventListeners();
         return this._element;
